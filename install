@@ -1,0 +1,10 @@
+#!/bin/bash
+rm -f $HOME/.vimrc
+cp -f vimrc $HOME/.vimrc
+
+rm -rf $HOME/.vim
+cp -Rf vim $HOME/.vim
+
+echo
+echo completed
+echo
