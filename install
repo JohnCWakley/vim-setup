@@ -3,7 +3,9 @@ rm -f $HOME/.vimrc
 cp -f vimrc $HOME/.vimrc
 
 rm -rf $HOME/.vim
-cp -Rf vim $HOME/.vim
+mkdir -p $HOME/.vim/autoload $HOME/.vim/bundle
+curl -LSso $HOME/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+git clone https://github.com/scrooloose/nerdtree.git $HOME/.vim/bundle/nerdtree
 
 echo
 echo completed
